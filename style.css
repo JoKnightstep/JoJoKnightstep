@@ -35,3 +35,69 @@
 .container .one-third.column { width: 300px; }
 
 .container .two-thirds.column { width: 620px; }
+
+
+/* INDEX */
+
+body{
+    background:#222;
+    svg{
+      position:absolute;
+      width:0;
+      height:0;
+    }
+    .panel{
+      display:flex;
+      position:relative;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      width:100vw;
+      margin:0px;
+      overflow:hidden;
+      background:#222;
+      .inner{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:radial-gradient(circle at center, transparent, transparent 250px, #222 250px, #222 260px, #E4CB07 260px);
+        z-index:9;
+      }
+      h1{
+        filter:url(#wave1);
+        margin:0;
+        transform-origin:bottom;
+        text-align:center;
+        line-height:0.85;
+        padding:200px;
+        color:#fff;
+        font-family:"Shrikhand";
+        position:absolute;
+        font-weight:100;
+        span{
+          display:inline-block;
+          clear:both;
+          width:100%;
+          font-size:5.5vmin;
+          transform:translateX(1.5vmin);
+          margin-top:-0.5vmin;
+          margin-bottom:0.5vmin;
+          &:nth-of-type(even){
+            font-size:6.5vmin;
+            transform:translateX(-1.5vmin);
+          }
+        }
+      }
+      &.panel2{
+        background:#fff;
+        .inner{
+          background:radial-gradient(circle at center, transparent, transparent 250px, #FFF 250px, #FFF 260px, #E4CB07 260px);
+        }
+        h1{
+          filter:url(#wave2);
+          transform-origin:top;
+          color:#222;
+        }
+      }
+    }
+  }
