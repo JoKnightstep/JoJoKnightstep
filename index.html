@@ -21,17 +21,7 @@
         .inner
         %h1 <span>powered by</span><span>svg filters</span><span>& gsap</span><span>& tornis</span>
        
-       %svg{ :version => "1.1", :xmlns => "http://www.w3.org/2000/svg"}
-        %defs
-         %filter#wave1
-          %feturbulence#turbulence{:basefrequency => "0.003 0.004", :numoctaves => "1", :result => "noise", :seed => "13"}
-          %fedisplacementmap#displacement{:in => "SourceGraphic", :in2 => "noise", :scale => "0"}
-          
-       %svg{ :version => "1.1", :xmlns => "http://www.w3.org/2000/svg"}
-        %defs
-         %filter#wave2
-          %feturbulence#turbulence{:basefrequency => "0.004 0.004", :numoctaves => "1", :result => "noise", :seed => "13"}
-          %fedisplacementmap#displacement{:in => "SourceGraphic", :in2 => "noise", :scale => "0"}
+      
     
 </body>
 </html>
