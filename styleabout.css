@@ -1,5 +1,9 @@
 /* ABOUT GRID */
 
+*{
+	font: Courier    
+   }   
+
 .vertical-divider{
 	clear: both;
 	position: relative;
